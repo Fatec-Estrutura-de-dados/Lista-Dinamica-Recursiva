@@ -99,9 +99,6 @@ public class MainTest {
 		//adiciona final
 		listLivros.adiciona(new Livros("Cobol for beginners", 5));
 		
-		
-	
-		
 		//adiciona posição
 		listLivros.adiciona(2, new Livros("React Native ", 20));
 		System.out.println(listLivros.toString());
@@ -111,13 +108,18 @@ public class MainTest {
 		listLivros.listaOrdenada();
 		System.out.println(listLivros.toString());
 		//remove inicio
-		//listLivros.removeFirst();
+		listLivros.removeFirst();
 		
 		//remove final
-		//listLivros.removeFinal();
+		listLivros.removeFinal();
 		
 		//Remove de uma determinada posição
-		//listLivros.removePosition(3);
+		listLivros.removePosition(3);
+		
+		if(listLivros.buscaSequencial("PHPf test Unit")) {
+			System.out.println("Livro encontrado");
+		}else
+			System.out.println("Livro não encontrado");
 		
 		
 

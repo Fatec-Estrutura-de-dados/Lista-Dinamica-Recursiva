@@ -218,6 +218,21 @@ public class LinkedList<T> {
 	}
 
 	
+	public boolean buscaSequencial(String nome) {
+		
+		Node<T> node  = this.primeira;
+		
+		while(node!=null) {
+			
+			if(node.getElemento()
+					.toString()
+					.toUpperCase().equals(nome.toUpperCase()))
+				  return true;
+			node =node.getProximo();
+		}
+		
+		return false;
+	}
 	public Node<T> ordenaList(Node<T> node) {
 
 		Node<T> inicial = node.getProximo();
